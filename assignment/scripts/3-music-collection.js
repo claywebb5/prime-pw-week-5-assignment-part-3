@@ -35,15 +35,28 @@ console.log(collection); // This will log the values in the collection array
 
 function showCollection(array) { // Start showCollection function
   console.log('In showCollection function');
-  console.log(`There are ${collection.length} items in the collection array`); // This will log the amount of items in the collection array
-  for (let i of collection) { // Start for of loop
-    console.log(`${i.title} by ${i.artist}, published in ${i.yearPublished}`); // This will log each lists title, artist, and yearPublished
+  console.log(`There are ${array.length} items in the array`); // This will log the amount of items in the array
+  for (let i of array) { // Start for of loop
+    console.log(`${i.title} by ${i.artist}, published in ${i.yearPublished}`); // This will log each lists title, artist, and yearPublished when called
   }// End for of loop
 
 } // End showCollection function
-showCollection(collection);
+showCollection(collection); // Calling the showCollection function with the collection array
 
 function findByArtist(artist) { // Start findByArtist function
   console.log('In findByArtist function');
+  let artistList = [];
+  for (let i = 0; i < collection.length; i++) {
+    if (collection[i].artist === artist) {
+      artistList.push(collection[i].artist);
+    }
+    else {
+      console.log('Artist not available');
+    }
+  }
 
+  console.log(artistList);
 } // End findByArtist function
+
+findByArtist('Blink-182');
+findByArtist('Michael Jackson');
