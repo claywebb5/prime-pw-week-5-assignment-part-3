@@ -23,9 +23,11 @@ const myList5 = addToCollection( 'Put Your Records On', 'Ritt Momney', 2020); //
 
 collection.push(myList, myList1, myList2, myList3, myList4, myList5); // This pushes the new albums values into the collection array
 
-console.log(myList); // This will log the values for myList
-console.log(myList1); // This will log the values for myList1
-console.log(myList2); // This will log the values for myList2
-console.log(myList3); // This will log the values for myList3
-console.log(myList4); // This will log the values for myList4
-console.log(myList5); // This will log the values for myList5
+console.log(myList); // This will test and log the values for myList
+console.log(myList1); // This will test and log the values for myList1
+console.log(myList2); // This will test and log the values for myList2
+console.log(myList3); // This will test and log the values for myList3
+console.log(myList4); // This will test and log the values for myList4
+console.log(myList5); // This will test and log the values for myList5
+
+console.log(collection); // This will log the values in the collection array
