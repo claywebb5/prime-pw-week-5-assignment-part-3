@@ -31,3 +31,12 @@ console.log(myList4); // This will test and log the values for myList4
 console.log(myList5); // This will test and log the values for myList5
 
 console.log(collection); // This will log the values in the collection array
+
+function showCollection(array) { // Start showCollection function
+  console.log(`There are ${collection.length} items in the collection array`); // This will log the amount of items in the collection array
+  for (let i of array) { // Start for of loop
+    console.log(`${i.title} by ${i.artist}, published in ${i.yearPublished}`); // This will log each lists title, artist, and yearPublished
+  }// End for of loop
+
+} // End showCollection function
+showCollection(collection);
