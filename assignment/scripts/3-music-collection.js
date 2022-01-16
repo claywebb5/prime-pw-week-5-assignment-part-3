@@ -3,10 +3,11 @@ console.log('***** Music Collection *****');
 let collection = []; // Variable that starts as an empty array
 
 function addToCollection(title, artist, yearPublished) { // Start addToCollection function
+  console.log('In addToCollection function');
   const album = {}; // Created the object album
-    album.title = title,
-    album.artist = artist,
-    album.yearPublished = yearPublished
+    album.title = title;
+    album.artist = artist;
+    album.yearPublished = yearPublished;
 
   collection.push(album.title, album.artist, album.yearPublished); // This pushes the parameters into the empty collection array
 
@@ -32,15 +33,17 @@ console.log(myList5); // This will test and log the values for myList5
 
 console.log(collection); // This will log the values in the collection array
 
-function showCollection(artist) { // Start showCollection function
+function showCollection(array) { // Start showCollection function
+  console.log('In showCollection function');
   console.log(`There are ${collection.length} items in the collection array`); // This will log the amount of items in the collection array
-  for (let i of artist) { // Start for of loop
+  for (let i of collection) { // Start for of loop
     console.log(`${i.title} by ${i.artist}, published in ${i.yearPublished}`); // This will log each lists title, artist, and yearPublished
   }// End for of loop
 
 } // End showCollection function
-console.log(showCollection(collection));
+showCollection(collection);
 
 function findByArtist(artist) { // Start findByArtist function
+  console.log('In findByArtist function');
 
 } // End findByArtist function
